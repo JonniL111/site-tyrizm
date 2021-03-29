@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Form, Field } from 'react-final-form';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import { Redirect } from 'react-router-dom';
 
 import { loginUser } from '../redux/action/user';
