@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { DoorOpen, DoorClosed } from 'react-bootstrap-icons';

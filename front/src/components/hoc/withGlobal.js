@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 export const GlobalData = React.createContext();
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 import LoginPage from './pages/LoginPage';
 import { Header } from './components/header';
