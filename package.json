@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "server": "nodemon index.js",
+  "scripts": {    
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd front && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
   "author": "Jon",
