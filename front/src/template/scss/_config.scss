@@ -1,0 +1,213 @@
+// USER VARIABLES SECTION
+
+$accent: #83ae3e;
+$accenthover: #689029;
+$orange: #fc8816; // Accent Color;
+$orangehover: #ef5a00; // Accent Color
+$dark: #8f8f8f;
+$grey: #e7e7e7;
+$darkhover: #46474a;
+$fontsize: 14px; // Body Font Size
+$textcolor: #46474a; // Text Color
+$verydark: #282e3e;
+
+$lineheight: 1.57143; // Document Line Height
+$userfont: lato-rt, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import '../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+@import '../../../node_modules/bootstrap-icons/font/bootstrap-icons'; // Optional Bootstrap Grid
+//@import 'node_modules/swiper/swiper-bundle'
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('lato-rt', normal, 900, '../fonts/latoblack.woff2');
+@include font('lato-rt', normal, 400, '../fonts/latoregular.woff2');
+@include font('lato-rt', normal, 600, '../fonts/latosemibold.woff2');
+@include font('bootstrap-icons', normal, 400, '../fonts/bstrap-icons.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  background: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.btn {
+  padding: 15px 22px;
+  border-radius: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 0;
+  transition: all 0.3s;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn-green {
+  background-color: $accent;
+  &:hover {
+    background-color: $accenthover;
+  }
+}
+
+.btn-orange {
+  background-color: $orange;
+  &:hover {
+    background-color: $orangehover;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  color: $darkhover;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.title--white {
+  color: #fff;
+}
+
+.section-title.line {
+  &::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $accent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.bg-dark {
+  background-color: #f7f7f7;
+}
+.price {
+  color: $textcolor;
+  font-weight: bold;
+  font-size: 24px;
+}
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.dark-sektion {
+  background: $verydark;
+  color: #fff;
+  .section-title {
+    color: #fff;
+  }
+}
+
+.row-padding {
+  margin-top: $gutter;
+}
+.full-width {
+  width: 100%;
+}
+
+.line-full-width {
+  border-bottom: 1px solid $grey;
+}
+
+.block-title {
+  font-size: 24px;
+  line-height: 1.25;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.dark-text {
+  color: $dark;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}

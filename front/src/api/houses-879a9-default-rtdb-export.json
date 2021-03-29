@@ -1,0 +1,359 @@
+{
+  "categorys" : [ {
+    "id" : "0",
+    "img" : "./images/dist/categories-1.jpg",
+    "title" : "Квартира студия"
+  }, {
+    "id" : "1",
+    "img" : "./images/dist/categories-2.jpg",
+    "title" : "Люксовая недвижимость"
+  }, {
+    "id" : "2",
+    "img" : "./images/dist/categories-3.jpg",
+    "title" : "Дача"
+  }, {
+    "id" : "3",
+    "img" : "./images/dist/categories-4.jpg",
+    "title" : "С бассеином"
+  } ],
+  "filters" : [ {
+    "id" : 0,
+    "name" : "keyWords",
+    "title" : "Ключевые слова"
+  }, {
+    "captions" : "Москва, Воронеж, Тверь",
+    "id" : 1,
+    "name" : "location",
+    "title" : "Место положение"
+  }, {
+    "captions" : [ "Квартира", "Дом", "Дача" ],
+    "id" : 2,
+    "name" : "status",
+    "title" : "Статус"
+  }, {
+    "captions" : [ "Готов к сдаче", "Ремонт" ],
+    "id" : 3,
+    "name" : "propertyType",
+    "title" : "Готовность"
+  }, {
+    "id" : 4,
+    "name" : "area",
+    "title" : "Площадь"
+  }, {
+    "captions" : [ 1, 2, 3, 4, 5 ],
+    "id" : 5,
+    "name" : "bedrooms",
+    "title" : "Спален"
+  }, {
+    "captions" : [ 1, 2, 3, 4, 5 ],
+    "id" : 6,
+    "name" : "beds",
+    "title" : "Кроватей"
+  }, {
+    "captions" : [ 0, 1, 2, 3, 4, 5 ],
+    "id" : 7,
+    "name" : "parking",
+    "title" : "Парковочных мест"
+  } ],
+  "mainslider" : {
+    "slides" : [ {
+      "id" : 0,
+      "link" : "#",
+      "price" : "216.00",
+      "text" : "Make Modera Loft your home and reside in historic Jersey City style.",
+      "title" : "Популярные категории",
+      "urlImg" : "https://grandgames.net/puzzle/source/v_beloj_komnate.jpg"
+    }, {
+      "id" : 1,
+      "link" : "#",
+      "price" : "236.00",
+      "text" : "Make Modera Loft your home and reside in historic Jersey City style.",
+      "title" : "Популярные категории",
+      "urlImg" : "https://pixy.aleshamusic.com/wp-content/uploads/Contemporary-Living-Room-Ideas.jpg"
+    } ],
+    "title" : "Slide 1"
+  },
+  "options" : {
+    "mainUrl" : "http://localhost:3000/"
+  },
+  "products" : [ {
+    "category" : "0",
+    "src":"moskovskij_proezd_dom_1",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 0,
+    "img" : [ {
+      "src" : "https://avatars.mds.yandex.net/get-zen_doc/1887828/pub_5d9dfb56a660d700ad8d93f7_5d9dfe6e3d873600af10648c/scale_1200"
+    }, {
+      "src" : "https://im0-tub-ru.yandex.net/i?id=d0f542253734c95e0b55750dedda80e2&ref=rim&n=33&w=188&h=188"
+    }, {
+      "src" : "https://mykaleidoscope.ru/uploads/posts/2020-03/1583684597_16-p-dizain-komnati-dlya-dvukh-shkolnikov-28.jpg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Москва",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 60,
+      "filterId" : 4
+    }, {
+      "caption" : 1,
+      "filterId" : 5
+    }, {
+      "caption" : 2,
+      "filterId" : 6
+    }, {
+      "caption" : 1,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 2,
+    "title" : "Московский проезд, дом 1"
+  }, {
+    "category" : "1",
+    "src":"moskovskij_proezd_dom_2",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 1,
+    "img" : [ {
+      "src" : "http://malinastudiya.ru/images/projects/project381/detskayia_7.jpg"
+    }, {
+      "src" : "https://arxip.com/resize/object_detail/0cd1/kom/komnata-podrost_dizayn-in_cd1.jpg"
+    }, {
+      "src" : "https://womanadvice.ru/sites/default/files/23/2016-04-09_0015/idei_detskoy_komnaty_dlya_malchika_5.jpg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Москва",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 150,
+      "filterId" : 4
+    }, {
+      "caption" : 3,
+      "filterId" : 5
+    }, {
+      "caption" : 4,
+      "filterId" : 6
+    }, {
+      "caption" : 2,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 5,
+    "title" : "Московский проезд, дом 2"
+  }, {
+    "category" : "2",
+    "src":"moskovskij_proezd_dom_3",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 2,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Москва",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 120,
+      "filterId" : 4
+    }, {
+      "caption" : 2,
+      "filterId" : 5
+    }, {
+      "caption" : 3,
+      "filterId" : 6
+    }, {
+      "caption" : 2,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 1,
+    "title" : "Московский проезд, дом 3"
+  }, {
+    "category" : "0",
+    "src":"moskovskij_proezd_dom_54",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 3,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Москва",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 120,
+      "filterId" : 4
+    }, {
+      "caption" : 2,
+      "filterId" : 5
+    }, {
+      "caption" : 3,
+      "filterId" : 6
+    }, {
+      "caption" : 2,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 5,
+    "title" : "Московский проезд, дом 54"
+  }, {
+    "category" : "3",
+    "src":"moskovskij_proezd_dom_5",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 4,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Воронеж",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 120,
+      "filterId" : 4
+    }, {
+      "caption" : 2,
+      "filterId" : 5
+    }, {
+      "caption" : 4,
+      "filterId" : 6
+    }, {
+      "caption" : 1,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 3,
+    "title" : "Московский проезд, дом 5"
+  }, {
+    "category" : "3",
+    "src":"moskovskij_proezd_dom_6",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 5,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Воронеж",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 120,
+      "filterId" : 4
+    }, {
+      "caption" : 1,
+      "filterId" : 5
+    }, {
+      "caption" : 2,
+      "filterId" : 6
+    }, {
+      "caption" : 0,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 2,
+    "title" : "Московский проезд, дом 6"
+  }, {
+    "category" : "0",
+    "src":"moskovskij_proezd_dom_75",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 6,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "быстро, качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Воронеж",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 50,
+      "filterId" : 4
+    }, {
+      "caption" : 1,
+      "filterId" : 5
+    }, {
+      "caption" : 2,
+      "filterId" : 6
+    }, {
+      "caption" : 0,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 4,
+    "title" : "Московский проезд, дом 75"
+  }, {
+    "category" : "0",
+    "src":"moskovskij_proezd_dom_8",
+    "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
+    "id" : 7,
+    "img" : [ {
+      "src" : "https://dizainexpert.ru/wp-content/uploads/2020/01/detskaya-8-kv-m-foto-dizajn.jpeg"
+    } ],
+    "params" : [ {
+      "caption" : "качественно, удобно",
+      "filterId" : 0
+    }, {
+      "caption" : "Тверь",
+      "filterId" : 1
+    }, {
+      "caption" : "Готово к сдаче",
+      "filterId" : 3
+    }, {
+      "caption" : 70,
+      "filterId" : 4
+    }, {
+      "caption" : 2,
+      "filterId" : 5
+    }, {
+      "caption" : 3,
+      "filterId" : 6
+    }, {
+      "caption" : 0,
+      "filterId" : 7
+    } ],
+    "price" : "3,339.00",
+    "reiting" : 2,
+    "title" : "Московский проезд, дом 8"
+  } ],
+  "sellers" : [ {
+    "agency" : "Room Inc.",
+    "agent" : "Светлана Иванова",
+    "agentId" : 0,
+    "location" : "Улица 17",
+    "price" : 2490.0
+  } ]
+}

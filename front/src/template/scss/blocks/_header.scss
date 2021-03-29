@@ -1,0 +1,98 @@
+.navbar-toppanel {
+  padding: 18px 0 9px;
+  border-bottom: 1px solid $grey;
+  color: $dark;
+  display: flex;
+  justify-content: space-between;  
+  &__login {
+    margin-right: 4%;
+    width: 150px;
+  }
+  &__info {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    max-width: 1090px;
+    .navbar-toppanel__info-item {
+      margin: 0 10px;
+    }
+  }
+  &__social {
+    margin-left: 4%;
+    display: flex;
+    width: 150px;
+    justify-content: flex-end;
+    .toppanel-info:hover svg {
+      fill: $darkhover;
+    }
+    .toppanel-info:hover i {
+      color: $darkhover;
+    }
+  }
+  .toppanel-inner {
+    display: flex;
+  }
+}
+.toppanel-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  svg, i {
+    height: 20px;
+    width: 20px;
+    fill: $dark;
+    margin-right: 5px;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  i::before{
+    height: 100%;
+    vertical-align: middle;
+  }
+  span {
+    line-height: 20px;
+    color: $dark;
+    transition: all 0.3s;
+  }
+  &:hover span {
+    color: $accenthover;
+  }
+}
+.navbar-toppanel__login {
+  span {
+    color: $accent;
+    cursor: pointer;
+  }
+}
+.navbar-inner {
+  &__top {
+    padding: 35px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+  }
+  &__bottom {
+    padding: 10px 15px;
+  }
+}
+.navbar-nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: $accenthover;
+    }
+  }
+  &__item-active {
+    color: $accenthover;
+  }
+}

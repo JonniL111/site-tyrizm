@@ -1,0 +1,59 @@
+.category{
+  margin-top: $gutter;
+  &:hover .category__description{
+    background: $accent;
+  }
+  &__link{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    min-height: 100%;
+    min-width: 100%;
+  }
+  &__description{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    padding: $gutter/2 $gutter;
+    color: #fff;    
+    transition: all 0.3s;
+  }
+  &__description-title{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  &__description-properties{
+    color:$grey;
+  }
+}
+
+.advantage{
+  margin-top: $gutter/2;
+  &__img-wrapper{
+    width: 80px;
+    height: 80px;
+    background: $orange;
+    border: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 48px;
+  }
+  &__title{
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  &__text{
+    color: #b0b3bc;
+    margin-top: 10px;
+  }
+}

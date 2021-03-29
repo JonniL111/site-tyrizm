@@ -1,0 +1,123 @@
+.thumbnails {
+  background-color: #fff;
+  .section-wrapper {
+    margin-bottom: $gutter;
+  }
+}
+.thumbnail {
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+  &__link-inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__link-img {
+    min-width: 110%;
+    min-height: 100%;
+    transform: translateX(0);
+    transition: all 0.3s;
+    &:hover {
+      transform: translateX(8%);
+    }
+  }
+  &__title {
+    color: $accent;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    transition: all 0.3s;
+    margin-top: 22px;
+    &:hover {
+      color: $accenthover;
+    }
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__description {
+    line-height: 22px;
+    margin-top: 10px;
+  }
+}
+.thumbnail-properties {
+  margin-top: 10px;
+  &__item {
+    display: inline-block;
+    width: 48%;
+    height: 25px;
+    font-size: 14px;
+    color: $dark;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.banner-section {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 90px;
+  .section-title {
+    font-size: 54px;
+  }
+}
+.breadcrumbs {
+  &__item {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+  }
+  &__link {
+    color: $orange;
+    transition: all 0.3s;
+    letter-spacing: 0.1;
+  }
+  &__link:hover {
+    color: $orangehover;
+  }
+
+  &__item + &__item {
+    padding-left: 40px;
+    &::before {
+      content: '\002F';
+      position: absolute;
+      left: 15px;
+    }
+  }
+}
+.pagination{
+  &__list{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__list-item{
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+    text-align: center;
+    border: 1px solid $accent;
+    border-radius: 50%;
+  }
+  &__list-item + &__list-item{
+    margin-left: 10px;
+  }
+}

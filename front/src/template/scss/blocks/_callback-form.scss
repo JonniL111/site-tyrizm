@@ -1,0 +1,13 @@
+.callback{
+  color: $dark;
+  &__input,
+  &__textarea{
+    padding: 11px 20px;
+    border: 1px solid $grey;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__textarea{
+    min-height: 150px;
+  }
+}

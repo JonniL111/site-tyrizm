@@ -1,0 +1,73 @@
+@import 'config';
+@import "blocks/all";
+
+.section-filter{
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0; 
+}
+
+.product__slider .swiper-container{
+  height: 100%;
+}
+
+.product__slider .swiper-slide-active{
+  transition: all 0.2s;
+  opacity: 1!important;
+}
+
+.form-group.width-2 {
+  width: 10%;
+}
+.form-group.width-3 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group .btn{
+  width: 100%;
+  margin-top: auto;
+}
+.flex{
+  display: flex;
+}
+.form-group__label {
+  margin-bottom: 0;
+}
+.form-group__input,
+.form-group__inner{
+  margin-top: 9px;
+}
+
+.form-group.width-1 .form-group__range {
+  width: 47%;
+}
+
+.form-dash {
+  display: inline-block;
+  width: 2%;
+  margin: 2%;
+  border-bottom: 1px solid #ccc;
+}
+.navbar-nav__item a.active{
+  color: red;
+}
+.error-text{
+  width: 100%;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.socialbtn__link{
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+

@@ -1,0 +1,112 @@
+.swiper {
+  padding-top: 0;
+}
+.main-slider {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $grey;
+    transition: all 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .swiper-slide {
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .container {
+      height: 100%;
+    }
+    &__title {
+      font-size: 30px;
+      color: $grey;
+      padding-bottom: 25px;
+      position: relative;
+    }
+    &__content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      color: $grey;
+    }
+    &__content-wrapper {
+      min-width: 275px;
+      max-width: 370px;
+      background: rgba(0, 0, 0, 0.75);
+      max-height: 70%;
+      margin-bottom: 50px;
+      padding: $gutter;
+      margin-left: $gutter/2;
+    }
+    &__content-text {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  }
+  .control-buy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .btn {
+      width: 90px;
+      text-align: center;
+    }
+    .price {
+      color: $orange;
+    }
+  }
+  .swiper-slide__title.line {
+    &::before {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 2px;
+      background: $accent;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+/* single slider */
+.product__slider {
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {    
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+}
