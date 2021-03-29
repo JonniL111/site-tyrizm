@@ -1,3 +1,5 @@
+import { options } from '../../api';
+
 import {
   LOGIN_USER,
   LOGOUT_USER,
@@ -24,7 +26,9 @@ export const cleenBreadCrumbs = {
   type: CLEEN_BREAD_CRUMBS,
 };
 
-export const fetchOptions = (db) => (dispatch) => {
-  const options = db.ref('options');
-  options.on('value', (options) => dispatch({ type: SET_OPTIONS, payload: options.val() }));
+export const fetchOptions = () => (dispatch) => {
+  options
+  .getOptions()
+  .then((res) => {
+    dispatch({ type: SET_OPTIONS, payload: res.data })});
 };

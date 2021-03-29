@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import firebase from 'firebase/app';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { DoorOpen, DoorClosed } from 'react-bootstrap-icons';
@@ -14,16 +13,9 @@ function Header() {
     options: { mainUrl },
   } = useContext(GlobalData);
 
-  const userSignOut = () => {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => dispatch(logoutUser))
-      .catch(function (error) {
-        console.error('Sign Out Error', error);
-      });
-  };
 
+  const logInOut = <span> Туризм сервис </span>
+/* 
   const logInOut = !user.isLogin ? (
     <NavLink to="login" className="">
       <DoorOpen />
@@ -34,7 +26,7 @@ function Header() {
       <DoorClosed />
       <span>Выйти</span>
     </span>
-  );
+  ); */
 
   return (
     <header className="header">

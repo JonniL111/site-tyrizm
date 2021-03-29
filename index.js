@@ -10,8 +10,8 @@ const PORT = process.env.PORT ?? 3001;
 
 const app = express();
 
-//app.use(express.static(path.join(__dirname, 'front/build'))); 
-app.use(express.json());
+app.use(express.static(path.join(__dirname, 'front/build'))); 
+//app.use(express.json());
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {

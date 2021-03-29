@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import firebase from 'firebase/app';
 
 import LoginPage from './pages/LoginPage';
 import { Header } from './components/header';
@@ -16,19 +15,13 @@ import 'swiper/swiper-bundle.min.css';
 import { fetchFilters } from './redux/action/filters';
 
 function App() {
-  const { dispatch, db } = useContext(GlobalData);
-  const isLogin = firebase.auth().currentUser;
+  const { dispatch } = useContext(GlobalData);
 
-  useEffect(() => {
-    if (isLogin) {
-      dispatch(loginUser({ email: isLogin.email }));
-    } else dispatch(logoutUser);
-  }, []);
 
   useEffect(() => {
     dispatch(fetchCategorys());
     dispatch(fetchFilters());
-    dispatch(fetchOptions(db));
+    dispatch(fetchOptions());
   }, []);
   return (
     <>

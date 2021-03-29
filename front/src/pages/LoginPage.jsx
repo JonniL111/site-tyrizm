@@ -14,14 +14,9 @@ function LoginPage({history}) {
   }, [input]) */
 
   const onSubmit = (values, form) => {
-    const { email, password } = values;
-    /* firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .catch((error) => console.log(error));
-    setTimeout(() => {
-      form.reset();
-    }, 300); */
+    return null
+    /* const { email, password } = values;
+
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -30,7 +25,7 @@ function LoginPage({history}) {
       .catch((error) => console.log(`Ошибка - ${error}`));
     setTimeout(() => {
       form.reset();
-    }, 300);
+    }, 300); */
   };
 
   return (

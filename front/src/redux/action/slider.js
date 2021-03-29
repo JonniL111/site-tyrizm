@@ -1,3 +1,5 @@
+import { sliders } from '../../api';
+
 import { GET_SLIDERS } from '../variables.js';
 
 export const addSliders = (sliders) => ({
@@ -5,12 +7,14 @@ export const addSliders = (sliders) => ({
   payload: sliders,
 });
 
-export const fetchSlides = ({ db, url }) => (dispatch, getState) => {
+export const fetchSlides = () => (dispatch, getState) => {
   const { mainSlider } = getState();
-  const slider = db.ref(url);
-  slider.on('value', (elem) => {
-    if (JSON.stringify(elem.val().slides) !== JSON.stringify(mainSlider.slides)) {
-      dispatch(addSliders(elem.val().slides));
-    }
-  });
+  sliders
+    .getSliders()
+    .then((res) => {
+      if (JSON.stringify(res.data.slides) !== JSON.stringify(mainSlider.slides)) {
+        dispatch(addSliders(res.data.slides));
+      }
+    })
+    .catch((error) => console.log(`Fetch products error - ${error}`));
 };

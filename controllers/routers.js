@@ -21,7 +21,7 @@ export const getProducts = (req, res) => {
   const filter = (products) => {
     //сoртируем по catId
     const sortProducts = sortBy(products, curentFilters);
-    
+
     //делем на страницы, опред скол страниц и текущую страницу
     const from = page * onPage;
     const to = from + onPage;
@@ -31,8 +31,8 @@ export const getProducts = (req, res) => {
   };
 
   const sortBy = (products, curentFilters) => {
-    const filters = JSON.parse(curentFilters)   
-    if (!filters.category) return products
+    const filters = JSON.parse(curentFilters);
+    if (!filters.category) return products;
     return products.filter((item) => +item.category == +filters.category);
   };
 };
@@ -62,3 +62,14 @@ export const getCategorys = (req, res) => {
     res.json(categorys.val());
   });
 };
+
+export const getOptions = (req, res) => {
+  const options = db.ref('options');
+  options.once('value', (options) => res.json(options.val()));
+};
+
+export const getMainSlider = (req, res) => {
+  const slider = db.ref('mainslider');
+  slider.once('value', (slider) => res.json(slider.val()));
+}
+

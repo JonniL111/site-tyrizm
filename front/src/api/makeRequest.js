@@ -6,9 +6,9 @@ import axios from 'axios';
 import config from './config';
 
 export default ({ url = '/', method = 'get', params = {}, data = {}, headers = {} }) => {
-  if (headers && headers.authorization) {
+/*   if (headers && headers.authorization) {
     headers.authorization = config.token;
-  } 
+  }  */
   return axios({
     url,
     method,

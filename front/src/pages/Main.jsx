@@ -16,7 +16,7 @@ function Maine() {
   } = useSelector((state) => state);
 
   useEffect(() => {
-    dispatch(fetchSlides({ db, url: 'mainslider' }));
+    dispatch(fetchSlides('mainslider'));
   }, []);
 
   useEffect(() => {
