@@ -8,7 +8,7 @@
 
 ## Frontend 
 
-Основные библиотеки: react, redux, redux-thunk, immer, axios
+Основные библиотеки: react, react-router-dom, redux, redux-thunk, immer, axios
 
 ## Backend
 
