@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Form, Field } from 'react-final-form';
+import { setCurentFilter } from '../../redux/action/filters';
+import { GlobalData } from '../hoc/withGlobal';
+import FieldSelect from './components/FieldSelect';
 
 function FinalForm() {
+  const { dispatch, filters } = useContext(GlobalData);
   const handlerSubmit = (e, val) => {
-    e.preventDefault();
     console.log(val);
+    e.preventDefault();
+    dispatch(setCurentFilter(val));
   };
 
   return (
@@ -31,16 +36,12 @@ function FinalForm() {
               <div className="form-group">
                 <label className="form-group__label">
                   Место
-                  <div className="form-group__inner">
-                    <i className="bi bi-chevron-down"></i>
-                    <Field className="form-group__search" name="location" component="select" defaultValue={"Any"}>
-                      <option value="Any" >
-                        Любое
-                      </option>
-                      <option value="Moskow">Moskow</option>
-                      <option value="Tver">Tver</option>
-                    </Field>
-                  </div>
+                  <FieldSelect
+                    className="form-group__search"
+                    name="location"
+                    component="select"
+                    filters={filters}                    
+                  />
                 </label>
               </div>
 
@@ -49,13 +50,12 @@ function FinalForm() {
                   Статус собственности
                   <div className="form-group__inner">
                     <i className="bi bi-chevron-down"></i>
-                    <Field className="form-group__search" name="propertyStatus" component="select"  defaultValue={"Any"}>
-                      <option value="Any">
-                        Любое
-                      </option>
-                      <option value="home">Дом</option>
-                      <option value="residenc">Резиденция</option>
-                    </Field>
+                    <FieldSelect
+                      className="form-group__search"
+                      name="status"
+                      component="select"
+                      filters={filters}
+                    />
                   </div>
                 </label>
               </div>
@@ -65,13 +65,12 @@ function FinalForm() {
                   Тип недвижимости
                   <div className="form-group__inner">
                     <i className="bi bi-chevron-down"></i>
-                    <Field className="form-group__search" name="propertyType" component="select"  defaultValue={"Any"}>
-                      <option value="Any">
-                        Любое
-                      </option>
-                      <option value="home">Дом</option>
-                      <option value="residenc">Резиденция</option>
-                    </Field>
+                    <FieldSelect
+                      className="form-group__search"
+                      name="propertyType"
+                      component="select"
+                      filters={filters}
+                    />
                   </div>
                 </label>
               </div>
@@ -115,30 +114,28 @@ function FinalForm() {
               </div>
 
               <div className="form-group width-2">
-                <span className="form-group__label">Мин. кроватей</span>
+                <span className="form-group__label">Мин. спален</span>
                 <div className="form-group__inner">
                   <i className="bi bi-chevron-down"></i>
-                  <Field className="form-group__search" name="minBeds" component="select"  defaultValue={"Any"}>
-                    <option value="Any">
-                      Любое
-                    </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </Field>
+                  <FieldSelect
+                    className="form-group__search"
+                    name="bedrooms"
+                    component="select"
+                    filters={filters}
+                  />
                 </div>
               </div>
 
               <div className="form-group width-2">
-                <span className="form-group__label">Мин. комнат</span>
+                <span className="form-group__label">Мин. кроватей</span>
                 <div className="form-group__inner">
-                  <i className="bi bi-chevron-down"></i>
-                  <Field className="form-group__search" name="minRooms" component="select"  defaultValue={"Any"}>
-                    <option value="Any">
-                      Любое
-                    </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </Field>
+                  <i className="bi bi-chevron-down"></i>                  
+                  <FieldSelect
+                    className="form-group__search"
+                    name="beds"
+                    component="select"
+                    filters={filters}
+                  />
                 </div>
               </div>
 

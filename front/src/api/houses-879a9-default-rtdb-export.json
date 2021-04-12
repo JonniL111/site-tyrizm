@@ -21,7 +21,7 @@
     "name" : "keyWords",
     "title" : "Ключевые слова"
   }, {
-    "captions" : "Москва, Воронеж, Тверь",
+    "captions" : [ "Москва", "Воронеж", "Тверь" ],
     "id" : 1,
     "name" : "location",
     "title" : "Место положение"
@@ -31,7 +31,7 @@
     "name" : "status",
     "title" : "Статус"
   }, {
-    "captions" : [ "Готов к сдаче", "Ремонт" ],
+    "captions" : [ "Готово к сдаче", "Ремонт" ],
     "id" : 3,
     "name" : "propertyType",
     "title" : "Готовность"
@@ -61,24 +61,23 @@
       "link" : "#",
       "price" : "216.00",
       "text" : "Make Modera Loft your home and reside in historic Jersey City style.",
-      "title" : "Популярные категории",
+      "title" : "Пентхаус",
       "urlImg" : "https://grandgames.net/puzzle/source/v_beloj_komnate.jpg"
     }, {
       "id" : 1,
       "link" : "#",
       "price" : "236.00",
       "text" : "Make Modera Loft your home and reside in historic Jersey City style.",
-      "title" : "Популярные категории",
+      "title" : "Загородный дом",
       "urlImg" : "https://pixy.aleshamusic.com/wp-content/uploads/Contemporary-Living-Room-Ideas.jpg"
     } ],
     "title" : "Slide 1"
   },
   "options" : {
-    "mainUrl" : "http://localhost:3000/"
+    "mainUrl" : "https://tyrizm.herokuapp.com/"
   },
   "products" : [ {
     "category" : "0",
-    "src":"moskovskij_proezd_dom_1",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 0,
     "img" : [ {
@@ -97,7 +96,11 @@
     }, {
       "caption" : "Готово к сдаче",
       "filterId" : 3
-    }, {
+    }, 
+    {
+      "caption" : "Дом",
+      "filterId" : 2
+    },{
       "caption" : 60,
       "filterId" : 4
     }, {
@@ -112,14 +115,14 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 2,
+    "src" : "moskovskij_proezd_dom_1",
     "title" : "Московский проезд, дом 1"
   }, {
     "category" : "1",
-    "src":"moskovskij_proezd_dom_2",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 1,
     "img" : [ {
-      "src" : "http://malinastudiya.ru/images/projects/project381/detskayia_7.jpg"
+      "src" : "https://me-house.ru/wp-content/uploads/2019/11/1-4.jpg"
     }, {
       "src" : "https://arxip.com/resize/object_detail/0cd1/kom/komnata-podrost_dizayn-in_cd1.jpg"
     }, {
@@ -131,6 +134,9 @@
     }, {
       "caption" : "Москва",
       "filterId" : 1
+    },{
+      "caption" : "Квартира",
+      "filterId" : 2
     }, {
       "caption" : "Готово к сдаче",
       "filterId" : 3
@@ -149,10 +155,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 5,
+    "src" : "moskovskij_proezd_dom_2",
     "title" : "Московский проезд, дом 2"
   }, {
     "category" : "2",
-    "src":"moskovskij_proezd_dom_3",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 2,
     "img" : [ {
@@ -171,6 +177,9 @@
       "caption" : 120,
       "filterId" : 4
     }, {
+      "caption" : "Дом",
+      "filterId" : 2
+    },{
       "caption" : 2,
       "filterId" : 5
     }, {
@@ -182,10 +191,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 1,
+    "src" : "moskovskij_proezd_dom_3",
     "title" : "Московский проезд, дом 3"
   }, {
     "category" : "0",
-    "src":"moskovskij_proezd_dom_54",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 3,
     "img" : [ {
@@ -201,6 +210,9 @@
       "caption" : "Готово к сдаче",
       "filterId" : 3
     }, {
+      "caption" : "Дом",
+      "filterId" : 2
+    },{
       "caption" : 120,
       "filterId" : 4
     }, {
@@ -215,10 +227,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 5,
+    "src" : "moskovskij_proezd_dom_54",
     "title" : "Московский проезд, дом 54"
   }, {
     "category" : "3",
-    "src":"moskovskij_proezd_dom_5",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 4,
     "img" : [ {
@@ -248,10 +260,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 3,
+    "src" : "moskovskij_proezd_dom_5",
     "title" : "Московский проезд, дом 5"
   }, {
     "category" : "3",
-    "src":"moskovskij_proezd_dom_6",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 5,
     "img" : [ {
@@ -281,10 +293,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 2,
+    "src" : "moskovskij_proezd_dom_6",
     "title" : "Московский проезд, дом 6"
   }, {
     "category" : "0",
-    "src":"moskovskij_proezd_dom_75",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 6,
     "img" : [ {
@@ -314,10 +326,10 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 4,
+    "src" : "moskovskij_proezd_dom_75",
     "title" : "Московский проезд, дом 75"
   }, {
     "category" : "0",
-    "src":"moskovskij_proezd_dom_8",
     "description" : "Located in the heart of Silver Lake, this magnificently re-imagined Spanish bungalow is not to be missed.",
     "id" : 7,
     "img" : [ {
@@ -347,6 +359,7 @@
     } ],
     "price" : "3,339.00",
     "reiting" : 2,
+    "src" : "moskovskij_proezd_dom_8",
     "title" : "Московский проезд, дом 8"
   } ],
   "sellers" : [ {

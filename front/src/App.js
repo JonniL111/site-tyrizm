@@ -17,12 +17,12 @@ import { fetchFilters } from './redux/action/filters';
 function App() {
   const { dispatch } = useContext(GlobalData);
 
-
   useEffect(() => {
     dispatch(fetchCategorys());
     dispatch(fetchFilters());
     dispatch(fetchOptions());
   }, []);
+
   return (
     <>
       <HandlerToken />

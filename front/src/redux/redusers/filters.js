@@ -14,8 +14,12 @@ export const filtersOptions = produce((draft, action) => {
 
     case SET_CURENT_FILTERS:
       for (const key in action.payload) {
-        draft.curentFilters[key] = action.payload[key]        
-      }      
+        if (action.payload[key] === 'false') {
+          delete draft.curentFilters[key];
+          continue;
+        }
+        draft.curentFilters[key] = action.payload[key];
+      }
       break;
 
     default:

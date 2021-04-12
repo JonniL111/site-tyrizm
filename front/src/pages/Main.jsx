@@ -8,7 +8,7 @@ import { GlobalData } from '../components/hoc/withGlobal';
 import { fetchPopularProducts } from '../redux/action/products';
 
 function Maine() {
-  const { dispatch, db } = useContext(GlobalData);
+  const { dispatch } = useContext(GlobalData);
   const {
     mainSlider: { slides, isLoaded },
     productsList: { popularProducts },
@@ -23,8 +23,6 @@ function Maine() {
     if (popularProducts.length > 0) return;
     dispatch(fetchPopularProducts({ qount: 6 }));
   }, []);
-
-  
 
   return (
     <>

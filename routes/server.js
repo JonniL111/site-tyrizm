@@ -8,6 +8,7 @@ import {
   getOptions,
   getMainSlider,
 } from '../controllers/routers.js';
+
 const router = Router();
 
 /* GET products. */
@@ -24,8 +25,6 @@ router.get('/api/filters', getFilters);
 
 router.get('/api/categorys', getCategorys);
 
-export default router;
-
 //user
 router.get('/api/options', getOptions);
 
@@ -33,5 +32,7 @@ router.get('/api/options', getOptions);
 router.get('/api/slider', getMainSlider);
 
 
+
+export default router;
 //успешный запрос .status(200)
 //создаем 201

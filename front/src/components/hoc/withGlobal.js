@@ -7,10 +7,10 @@ function WithGlobal({ children }) {
   const dispatch = useDispatch();
   const {
     user: { options },
-    filtersOptions: { curentFilters },
+    filtersOptions: { curentFilters, filters },
   } = useSelector((state) => state);
 
-  return <GlobalData.Provider value={{ dispatch, options, curentFilters }}>{children}</GlobalData.Provider>;
+  return <GlobalData.Provider value={{ dispatch, options, curentFilters, filters }}>{children}</GlobalData.Provider>;
 }
 
 export default WithGlobal;
